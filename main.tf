@@ -57,8 +57,8 @@ data "aws_ssm_parameter" "ca_key" {
 }
 
 module "self_signed_cert_root" {
-  source  = "cloudposse/ssm-tls-self-signed-cert/aws"
-  version = "0.5.0"
+  source  = "MonoidDev/ssm-tls-self-signed-cert/aws"
+  version = "0.5.1"
 
   attributes = ["self", "signed", "cert", "root"]
 
@@ -94,8 +94,8 @@ module "self_signed_cert_root" {
 }
 
 module "self_signed_cert_server" {
-  source  = "cloudposse/ssm-tls-self-signed-cert/aws"
-  version = "0.5.0"
+  source  = "MonoidDev/ssm-tls-self-signed-cert/aws"
+  version = "0.5.1"
 
   attributes = ["self", "signed", "cert", "server"]
 
